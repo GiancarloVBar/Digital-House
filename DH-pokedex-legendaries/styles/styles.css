@@ -1,0 +1,332 @@
+/* ESTILOS GLOBAIS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+/* 
+-----------------------------------------------------------------------
+HEADER - STYLES
+-----------------------------------------------------------------------
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #f5db13;
+    box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+    z-index: 1;
+}
+
+    /* flex 1 */
+    header > img {
+        width: 64px;
+    }
+    
+    /* flex 2 */
+    header > button {
+        background: none;
+        cursor: pointer;
+    }
+    
+    /* flex 3 */
+    header > nav {
+        display: none;
+    }
+
+/* 
+-----------------------------------------------------------------------
+SECTION 1 - ID - STYLES
+-----------------------------------------------------------------------
+*/
+
+section {
+    background-color: #1d1e1d;
+    color: #ffffff;
+}
+
+    section.pokemon-img > h1 {
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+        /* linha divisória abaixo de "legendaries"*/
+        .divider {
+            display: block;
+            background-color: #ffffff;
+            height: 1px;
+            width: 180px;
+            margin: auto;
+        }
+
+    section.pokemon-img > img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 175px;
+        display: block;
+        margin: auto;
+    }
+
+    section.pokemon-img > h2 {
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+        letter-spacing: 6px;
+        font-size: 42px;
+    }
+    
+    section.pokemon-img > p {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: justify-all;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    div.desktop {
+        display: none;
+    }
+
+/* 
+-----------------------------------------------------------------------
+SECTION 2 - STATUS - STYLES
+-----------------------------------------------------------------------
+*/
+
+section.status {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.bar {
+    height: 2px;
+    width: 100px;
+    background-color: #ffffff;
+}
+
+/* 
+-----------------------------------------------------------------------
+SECTION 3 - CARROSSEL - STYLES
+-----------------------------------------------------------------------
+*/
+
+section.carrossel-cards {
+    display: none;
+}
+
+
+
+
+
+/* ***************************************************** */
+/* ****************** RESPONSIVIDADES ****************** */
+/* ***************************************************** */
+
+/* 
+-----------------------------------
+RESPONSIVIDADE 321px - mobile S
+-----------------------------------
+*/
+@media (min-width: 321px) {
+    section.pokemon-img > h1 {
+        letter-spacing: 4px;
+        font-size: 35px;
+        
+    }
+    
+    .divider {
+        width: 210px;
+    }
+    
+    section.pokemon-img > img {
+        width: 200px;
+    }
+}
+
+/* 
+-----------------------------------
+RESPONSIVIDADE 376px - mobile M
+-----------------------------------
+*/
+
+@media (min-width: 376px) {
+    section.pokemon-img > h1 {
+        letter-spacing: 6px;
+        font-size: 40px;
+        
+    }
+    
+    .divider {
+        width: 250px;
+    }
+    
+    section.pokemon-img > img {
+        width: 250px;
+    }
+}
+
+/* 
+-----------------------------------
+RESPONSIVIDADE 481px - mobile L
+-----------------------------------
+*/
+
+@media (min-width: 481px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header > img {
+        width: 128px;
+    }
+
+    section.pokemon-img > h1 {
+        letter-spacing: 8px;
+        font-size: 50px;
+    }
+
+    .divider {
+        width: 320px;
+    }
+
+    section.pokemon-img > img {
+        width: 275px;
+    }
+}
+
+/* 
+-----------------------------------
+RESPONSIVIDADE 650px - tablet
+-----------------------------------
+*/
+
+@media (min-width: 650px) {
+    .navbar {
+        display: flex;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    section.pokemon-img > h1 {
+        font-size: 55px;
+        text-align: justify;
+        padding-left: 5%;
+    }
+
+    .divider {
+        width: 90%;
+    }
+
+    section.pokemon-img > img {
+        display: none;
+    }
+
+    section.pokemon-img > h2 {
+        display: none;
+    }
+
+    section.pokemon-img > p {
+        display: none;
+    }
+
+    section.status {
+        display: none;
+    }
+
+    section.pokemon-img > div.desktop {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Karla', sans-serif;
+        padding: 40px;
+    }
+
+    section.pokemon-img > div.desktop > img {
+        width: 300px;
+    }
+
+    section.pokemon-img > div.desktop > div.name-text {
+        padding-left: 20px;
+    }
+
+    section.pokemon-img > div.desktop > div.name-text > h2 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    section.pokemon-img > div.desktop > div.name-text > div.desktop-status {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+    }
+
+    section.pokemon-img > div.desktop > div.name-text > div.desktop-status > div {
+        padding: 20px;
+    }
+
+    section.carrossel-cards {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .arrow {
+        width: 20px;
+    }
+
+    .card {
+        width: 100px;
+    }
+
+    .special {
+        display: none;
+    }
+
+}
+
+/* 
+-----------------------------------
+RESPONSIVIDADE 769px - tablet/pc
+-----------------------------------
+*/
+
+@media (min-width: 769px) {
+
+    section.pokemon-img > div.desktop > img {
+        width: 45%;
+    }
+
+    section.carrossel-cards {
+        justify-content: space-evenly;
+
+    }
+    .arrow {
+        width: 30px;
+    }
+
+    .card {
+        width: 15%;
+    }
+
+    .special {
+        display: block;
+    }
+}

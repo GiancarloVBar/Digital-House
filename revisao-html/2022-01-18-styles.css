@@ -1,0 +1,23 @@
+html,
+body,
+
+#app {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* horizontal ou eixo principal*/
+    align-items: center; /* vertical ou eixo perpendicular*/
+
+}
+
+.box {
+    width: 100px;
+    height: 60px;
+    background: #f00;
+    margin: 5px;
+    flex-grow: 1;
+}

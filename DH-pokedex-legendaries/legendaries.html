@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <title>Legendaries</title>
+</head>
+<body>
+
+    <!-- 
+    -----------------------------------------------------------------------
+    HEADER
+    -----------------------------------------------------------------------
+    -->
+    <header>
+
+        <!-- HEADER FLEX 1 -->
+        <img src="img/logo.svg" alt="logo">
+
+        <!-- HEADER FLEX 2 -->
+        <button class="ham-menu" type="button">
+            <img src="img/hamburguer.svg" alt="Hamburguer Menu">
+        </button>
+
+        <!-- HEADER FLEX 3 -->
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">Pokedex</a>
+            <a href="">Legendaries</a>
+            <a href="">Documentation</a>
+        </nav>
+
+    </header>
+
+    <!-- 
+    -----------------------------------------------------------------------
+    SECTION 1 - ID
+    -----------------------------------------------------------------------
+    -->
+    <section class="pokemon-img">
+
+        <h1>
+            Legendaries
+        </h1>
+
+        <!-- linha divisória -->
+        <div class="divider"></div>
+        <!-- --------------- -->
+
+        <img src="./img/mew.svg" alt="">
+        
+        <h2>
+            Mew
+        </h2>
+        
+        <p>Mew é o lendário pokémon da cidade de Kanto.
+            Também conhecido pelo fato de ter sido a base da criação de Mewtwo,
+            este pokémon é considerado um dos pokémons mais fortes existentes.
+            Diferente do seu clone, Mew é bem calmo e pacifista,
+            mesmo sendo um pokémon extremamente raro, ele é muito brincalhão,
+            e também sempre buscando parar qualquer conflito existente,
+            como visto na sua batalha contra MewTwo.
+        </p>
+        
+        <!-- div que será apresentada apenas para tablets e desktops -->
+        <div class="desktop">
+            
+            <!-- desktop flex 1 -->
+            <img src="./img/mew.svg" alt="">
+
+            <!-- desktop flex 2 -->
+            <div class="name-text">
+                <h2>
+                    Mew
+                </h2>
+                
+                <p>Mew é o lendário pokémon da cidade de Kanto.
+                    Também conhecido pelo fato de ter sido a base da criação de Mewtwo,
+                    este pokémon é considerado um dos pokémons mais fortes existentes.
+                    Diferente do seu clone, Mew é bem calmo e pacifista,
+                    mesmo sendo um pokémon extremamente raro, ele é muito brincalhão,
+                    e também sempre buscando parar qualquer conflito existente,
+                    como visto na sua batalha contra MewTwo.
+                </p>
+
+                <!-- section 2 - status aparecerá nessa div para tablet e desktop-->
+                <div class="desktop-status">
+                    <div>
+                        <p>Healthy Points</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>
+                    </div>
+            
+                    <div>
+                        <p>Experience</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>        
+                    </div>
+            
+                    <div>
+                        <p>Attack</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>     
+                    </div>
+            
+                    <div>
+                        <p>Defense</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="special">
+                        <p>Special Attack</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="special">
+                        <p>Special Defense</p>
+                        <p>1000,000</p>
+                        <div class="bar"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- 
+    -----------------------------------------------------------------------
+    SECTION 2 - STATUS
+    -----------------------------------------------------------------------
+    -->
+    <section class="status">
+
+
+        <!-- flex 1 -->
+        <div>
+            <p>Healthy Points</p>
+            <p>1000,000</p>
+            <div class="bar"></div>
+        </div>
+
+        <!-- flex 2 -->
+        <div>
+            <p>Experience</p>
+            <p>1000,000</p>
+            <div class="bar"></div>        
+        </div>
+
+        <!-- flex 3 -->
+        <div>
+            <p>Attack</p>
+            <p>1000,000</p>
+            <div class="bar"></div>     
+        </div>
+
+        <!-- flex 4 -->
+        <div>
+            <p>Defense</p>
+            <p>1000,000</p>
+            <div class="bar"></div>
+        </div>
+
+
+
+    </section>
+
+    <!-- 
+    -----------------------------------------------------------------------
+    SECTION 3 - CARROSSEL - tablet/desktop
+    -----------------------------------------------------------------------
+    -->
+    <section class="carrossel-cards">
+        <img src="./img/arrowLeft.svg" alt="esquerda" class="arrow">
+        <img src="./img/legendaryCard-mew.svg" alt="mew" class="card">
+        <img src="./img/legendaryCard-moltres.svg" alt="moltres" class="card">
+        <img src="./img/legendaryCard-articuno.svg" alt="articuno" class="card">
+        <img src="./img/legendaryCard-zapdos.svg" alt="zapdos" class="card">
+        <img src="./img/legendaryCard-diance.svg" alt="diance" class="card">
+        <img src="./img/legendaryCard-xerneas.svg" alt="xerneas" class="card">
+        <img src="./img/arrowRight.svg" alt="direita" class="arrow">
+    </section>
+
+</body>
+</html>
